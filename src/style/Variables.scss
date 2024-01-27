@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: DM Sans, sans-serif;
+}
+
+// Global Variables
+
+$text-white: rgba(255, 255, 255, 0.6);
+$text-grey: rgba(21, 20, 57, 0.5);
+$purple-bg: rgba(47, 24, 147, 1);
+$purple-bg-alt: #1e0e62;
+$pink-bg: #e93a7d;
+$green-bg: #25dac5;
+$grey-bg: #ebeaed;
+
+// Global Mixins
+@mixin button($paddingX, $paddingY, $color-bg, $font-size, $font-weight) {
+  color: white;
+  font-weight: 500;
+  padding: $paddingX $paddingY;
+  background: $color-bg;
+  border: none;
+  border-radius: 30px;
+  font-size: $font-size;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid $color-bg;
+  font-weight: $font-weight;
+}

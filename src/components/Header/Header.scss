@@ -1,0 +1,49 @@
+@import "../../style/Variables.scss";
+
+.header {
+  padding: 20px 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $purple-bg;
+  h3 {
+    font-size: 24px;
+    font-weight: 900;
+  }
+  .logo {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    cursor: pointer;
+    .header-logo {
+      font-size: 40px;
+      color: $purple-bg;
+    }
+  }
+  .menu {
+    margin-right: 30px;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      li {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      :last-child {
+        border: 2px solid $grey-bg;
+        padding: 8px 16px;
+        border-radius: 25px;
+        &:hover {
+          background: $pink-bg;
+          border: 2px solid $pink-bg;
+          color: white;
+        }
+      }
+    }
+  }
+}
