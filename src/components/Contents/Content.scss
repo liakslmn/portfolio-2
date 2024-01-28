@@ -1,0 +1,121 @@
+@import "../../style/Variables.scss";
+
+.content-one {
+  padding: 100px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background: rgba(47, 24, 147, 1) url("../../assets/content-one-bg.svg") fixed
+    no-repeat;
+  background-size: 200%;
+  p {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 25px 0 0;
+  }
+  h2 {
+    font-size: 58px;
+    line-height: 70px;
+    letter-spacing: -1px;
+    text-align: center;
+    margin: 25px auto;
+    width: 60%;
+  }
+  h5 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 30px 0;
+    color: $text-white;
+    font-weight: 400;
+    width: 55%;
+  }
+}
+
+.content-two {
+  padding: 50px 100px;
+  p {
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $text-grey;
+  }
+  h2 {
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: center;
+    color: $purple-bg;
+    margin: 10px 0 40px;
+  }
+  .table-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    flex-wrap: wrap;
+    table {
+      min-width: 800px;
+      th {
+        font-size: 14px;
+        line-height: 26px;
+        letter-spacing: 2px;
+        text-align: left;
+        color: $text-grey;
+        text-transform: uppercase;
+        min-width: 200px;
+        text-align: center;
+        padding: 20px 0 10px;
+      }
+      td {
+        color: $purple-bg;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        font-weight: 600;
+        text-align: center;
+        border-top: 1px solid rgba(21, 20, 57, 0.2);
+        padding: 20px 0;
+      }
+    }
+    .learn-more-wrapper {
+      display: flex;
+      justify-content: center;
+      .learn-more {
+        background: rgba(235, 234, 237, 0.5);
+        padding: 35px;
+        width: 250px;
+        height: fit-content;
+        h4 {
+          font-size: 22px;
+          line-height: 32px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: $purple-bg;
+        }
+        p {
+          font-size: 16px;
+          line-height: 26px;
+          letter-spacing: 0px;
+          text-align: left;
+          color: $text-grey;
+          margin: 10px 0;
+          text-transform: none;
+        }
+        button {
+          @include button(10px, 25px, $green-bg, 14px, 500);
+          margin: 10px 0 0;
+        }
+      }
+    }
+  }
+}

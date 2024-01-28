@@ -21,7 +21,27 @@
     }
   }
   .menu {
-    margin-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    ul {
+      list-style: none;
+      display: flex;
+      gap: 40px;
+      align-items: center;
+      li {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 26px;
+        cursor: pointer;
+        transition: 0.3s;
+      }
+      .mag-glass {
+        font-size: 14px;
+      }
+    }
+  }
+
+  .login-signup {
     ul {
       list-style: none;
       display: flex;
@@ -35,13 +55,15 @@
         transition: 0.3s;
       }
       :last-child {
-        border: 2px solid $grey-bg;
+        border: 2px solid $purple-bg;
+        background: $purple-bg;
         padding: 8px 16px;
         border-radius: 25px;
+        color: white;
         &:hover {
-          background: $pink-bg;
-          border: 2px solid $pink-bg;
-          color: white;
+          background: transparent;
+          border: 2px solid $purple-bg;
+          color: $purple-bg;
         }
       }
     }

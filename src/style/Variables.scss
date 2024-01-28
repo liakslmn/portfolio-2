@@ -9,6 +9,8 @@
 
 $text-white: rgba(255, 255, 255, 0.6);
 $text-grey: rgba(21, 20, 57, 0.5);
+$text-grey-alt: rgba(21, 20, 57, 0.8);
+$text-grey-alt2: rgba(235, 234, 237, 1);
 $purple-bg: rgba(47, 24, 147, 1);
 $purple-bg-alt: #1e0e62;
 $pink-bg: #e93a7d;
@@ -28,4 +30,8 @@ $grey-bg: #ebeaed;
   cursor: pointer;
   border: 2px solid $color-bg;
   font-weight: $font-weight;
+  &:hover {
+    background: transparent;
+    color: $color-bg;
+  }
 }
