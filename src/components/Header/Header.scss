@@ -6,10 +6,7 @@
   justify-content: space-between;
   align-items: center;
   color: $purple-bg;
-  h3 {
-    font-size: 24px;
-    font-weight: 900;
-  }
+  transition: all 0.3s;
   .logo {
     display: flex;
     gap: 20px;
@@ -56,6 +53,86 @@
     .hamburger-menu {
       display: none;
       cursor: pointer;
+    }
+  }
+
+  &.sticky {
+    position: sticky;
+    top: 0;
+    background: $purple-bg;
+    .logo .header-logo,
+    .menu ul li {
+      color: white;
+    }
+    .menu {
+      ul li {
+        &:hover {
+          color: $pink-bg;
+        }
+        &:last-child {
+          &:hover {
+            border: 2px solid white;
+            color: white;
+          }
+        }
+      }
+      .hamburger-menu {
+        color: white;
+        &:hover {
+          color: $pink-bg;
+        }
+      }
+    }
+  }
+}
+
+.menu-mobile {
+  background: $purple-bg;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  top: 80px;
+  width: 100%;
+  height: 0;
+  transition: height 0.4s ease;
+  &.show {
+    height: 300px;
+    padding-top: 10px;
+    ul {
+      display: block;
+    }
+  }
+  ul {
+    list-style: none;
+    display: none;
+    animation: fadeIn 1s ease;
+    li {
+      margin: 20px 0;
+      color: white;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-weight: 600;
+      text-align: center;
+      &:last-child {
+        border: 2px solid $pink-bg;
+        background: $pink-bg;
+        padding: 8px 16px;
+        border-radius: 25px;
+        color: white;
+        &:hover {
+          background: transparent;
+          border: 2px solid $pink-bg;
+          color: $pink-bg;
+        }
+      }
+    }
+  }
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
     }
   }
 }
