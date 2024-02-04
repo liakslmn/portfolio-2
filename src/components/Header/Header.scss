@@ -23,48 +23,52 @@
   .menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     ul {
       list-style: none;
       display: flex;
-      gap: 40px;
+      gap: 20px;
       align-items: center;
       li {
-        font-size: 18px;
-        font-weight: 600;
+        font-size: 14px;
+        font-weight: bold;
         line-height: 26px;
+        padding: 0 10px;
         cursor: pointer;
         transition: 0.3s;
-      }
-      .mag-glass {
-        font-size: 14px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        transition: 0.3s;
+        &:last-child {
+          border: 2px solid $pink-bg;
+          background: $pink-bg;
+          padding: 8px 16px;
+          border-radius: 25px;
+          color: white;
+          &:hover {
+            background: transparent;
+            border: 2px solid $pink-bg;
+            color: $pink-bg;
+          }
+        }
       }
     }
+    .hamburger-menu {
+      display: none;
+      cursor: pointer;
+    }
   }
+}
 
-  .login-signup {
-    ul {
-      list-style: none;
-      display: flex;
-      gap: 40px;
-      align-items: center;
-      li {
-        font-size: 18px;
-        font-weight: 600;
-        line-height: 26px;
-        cursor: pointer;
-        transition: 0.3s;
+@media (max-width: 991px) {
+  .header {
+    padding: 20px;
+    .menu {
+      ul {
+        display: none;
       }
-      :last-child {
-        border: 2px solid $purple-bg;
-        background: $purple-bg;
-        padding: 8px 16px;
-        border-radius: 25px;
-        color: white;
-        &:hover {
-          background: transparent;
-          border: 2px solid $purple-bg;
-          color: $purple-bg;
-        }
+      .hamburger-menu {
+        display: block;
       }
     }
   }

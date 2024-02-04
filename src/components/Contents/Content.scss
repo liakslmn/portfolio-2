@@ -9,7 +9,7 @@
   color: white;
   background: rgba(47, 24, 147, 1) url("../../assets/content-one-bg.svg") fixed
     no-repeat;
-  background-size: 200%;
+  background-size: cover;
   p {
     font-size: 14px;
     line-height: 26px;
@@ -116,6 +116,41 @@
           margin: 10px 0 0;
         }
       }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .content-two {
+    padding: 40px;
+    .table-container {
+      gap: 50px;
+      .table {
+        overflow-x: auto;
+        table {
+          min-width: unset;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .content-one {
+    padding: 40px;
+    h2 {
+      font-size: 32px;
+      line-height: unset;
+      width: 100%;
+    }
+    h5 {
+      width: 100%;
+    }
+  }
+  .content-two {
+    h2 {
+      font-size: 32px;
+      line-height: unset;
     }
   }
 }

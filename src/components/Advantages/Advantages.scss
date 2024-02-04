@@ -6,7 +6,7 @@
   align-items: center;
   padding: 50px 0;
   background: $purple-bg url("../../assets/adv-bg.svg") fixed no-repeat center;
-  background-size: 200%;
+  background-size: cover;
   .advantages-p {
     text-transform: uppercase;
     font-size: 14px;
@@ -68,6 +68,29 @@
         text-align: left;
         color: $text-white;
       }
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .advantages {
+    padding: 40px;
+    .advantages-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .advantages {
+    h2 {
+      font-size: 32px;
+      line-height: unset;
+    }
+    h5 {
+      width: 100%;
     }
   }
 }

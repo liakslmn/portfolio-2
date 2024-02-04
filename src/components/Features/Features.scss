@@ -7,7 +7,7 @@
   padding: 40px 0;
   background: rgba(47, 24, 147, 1) url("../../assets/feature-bg.svg") fixed
     no-repeat;
-  background-size: 150%;
+  background-size: cover;
 
   .features-p {
     text-transform: uppercase;
@@ -41,6 +41,8 @@
     display: flex;
     gap: 30px;
     margin: 60px 0 30px;
+    flex-wrap: wrap;
+    justify-content: center;
     .features-box {
       display: flex;
       flex-direction: column;
@@ -151,6 +153,54 @@
       gap: 50px;
       display: flex;
       flex-direction: column;
+    }
+  }
+}
+
+@media (max-width: 1150px) {
+  .features-more {
+    .media-container {
+      margin: 50px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 50px;
+      img {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .features {
+    padding: 40px;
+    h2 {
+      font-size: 32px;
+      line-height: unset;
+    }
+    h5 {
+      width: 100%;
+    }
+    .features-container {
+      flex-wrap: wrap;
+      .features-box {
+        width: 100%;
+      }
+    }
+  }
+
+  .features-more {
+    padding: 40px;
+    h2 {
+      font-size: 32px;
+      line-height: unset;
+    }
+    h5 {
+      width: 100%;
+    }
+    .button-wrapper {
+      flex-wrap: wrap;
+      justify-content: center;
     }
   }
 }

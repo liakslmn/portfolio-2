@@ -1,0 +1,102 @@
+@import "../../style/Variables.scss";
+
+.get-started {
+  padding: 40px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: $purple-bg url("../../assets/get-started-bg.svg") fixed no-repeat;
+  background-size: cover;
+  .get-started-p {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    color: $text-white;
+  }
+  h2 {
+    font-size: 42px;
+    line-height: 52px;
+    letter-spacing: -0.4000000059604645px;
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+  }
+  .get-started-h5 {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: 10px 0;
+    color: $text-white;
+    font-weight: 400;
+    width: 50%;
+  }
+
+  .medium-container {
+    display: flex;
+    gap: 80px;
+    margin: 50px 0 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+    .medium-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+
+      .medium-box-icon {
+        font-size: 60px;
+        color: $text-white;
+      }
+
+      h5 {
+        font-size: 22px;
+        line-height: 32px;
+        letter-spacing: 0px;
+        text-align: center;
+        color: $text-white;
+        font-weight: 500;
+      }
+
+      button {
+        background: transparent;
+        color: $text-white;
+        font-size: 18px;
+        line-height: 26px;
+        letter-spacing: 0px;
+        text-align: center;
+        padding: 10px 20px;
+        border-radius: 25px;
+        border: 2px solid $text-white;
+        cursor: pointer;
+        transition: 0.3s;
+        &:hover {
+          background: white;
+          border: 2px solid white;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 426px) {
+  .get-started {
+    padding: 40px;
+    h2 {
+      font-size: 32px;
+      line-height: unset;
+    }
+    .get-started-h5 {
+      width: 100%;
+    }
+    .medium-container {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

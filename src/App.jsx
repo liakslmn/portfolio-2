@@ -4,9 +4,11 @@ import ContentOne from "./components/Contents/ContentOne";
 import ContentTwo from "./components/Contents/ContentTwo";
 import Features from "./components/Features/Features";
 import FeaturesMore from "./components/Features/FeaturesMore";
+import GetStarted from "./components/GetStarted/GetStarted";
 import Header from "./components/Header/Header";
 import Hero from "./components/Hero/Hero";
 import Product from "./components/Product/Product";
+import Footer from "./components/Footer/Footer";
 import "./style/Variables.scss";
 
 function App() {
@@ -21,6 +23,8 @@ function App() {
       <FeaturesMore />
       <Advantages />
       <Product />
+      <GetStarted />
+      <Footer />
     </div>
   );
 }
